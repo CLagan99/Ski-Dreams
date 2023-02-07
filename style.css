@@ -1,0 +1,811 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #58b4e7;
+    min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+#header .logo {
+    flex-basis: 20%;
+}
+
+#header .logo img {
+    height: 150px;
+    width: 150px;
+}
+
+#header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#header ul li {
+    list-style: none;
+}
+
+#header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+    background: #112434;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+section img#house {
+    z-index: 2;
+}
+
+section img#crs {
+    top: 0;
+    bottom: initial;
+}
+
+.sec {
+    position: relative;
+    padding: 100px;
+    background: #bedbe5;
+    box-shadow: 0 0 0 2px #bedbe5;
+}
+
+.sec h2 {
+    font-size: 5em;
+    color: #112434;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HOME */
+
+blockquote {
+    margin: 0;
+    font-size: 2.5em;
+    color: #112434;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+figcaption {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+blockquote::before {
+    content: '\201C';
+}
+
+blockquote::after {
+    content: '\201D';
+}
+
+.sec .home-info {
+    font-size: 1.2em;
+    color: #112434;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.sec .home-pic {
+    width: 650px;
+    height: 400px;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+/* ABOUT US */
+
+.about-info {
+    font-size: 1.2em;
+    color: #112434;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.about-pic {
+    width: 650px;
+    height: 500px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+/* BOOK SESSION */
+
+span {
+    color: #112434;
+    font-family: 'Apple Chancery', cursive;
+}
+
+.book-description {
+    width: 50%;
+    float: left;
+    margin-right: 25px;
+    margin-top: 30px;
+}
+
+.book-description p {
+    font-size: 1.2em;
+    line-height: 22px;
+    text-align: center;
+}
+
+.book-description ul {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.book-packs {
+    margin-top: 25px;
+}
+
+.book-solo {
+    display: inline-block;
+    padding: 25px;
+    text-align: center;
+}
+
+.book-solo h1 {
+    font-size: 1.2em;
+    font-weight: 200;
+    margin-top: 5px;
+    font-family: 'Apple Chancery', cursive;
+}
+
+.book-solo h3 {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-top: 10px;
+    font-family: 'Apple Chancery', cursive;
+}
+
+.book-solo p {
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: 'Apple Chancery', cursive;
+}
+
+.book-family {
+    display: inline-block;
+    padding: 25px;
+    text-align: center;
+}
+
+.book-family h1 {
+    font-size: 1.2em;
+    font-weight: 200;
+    margin-top: 5px;
+    font-family: 'Apple Chancery', cursive;
+}
+
+.book-family h3 {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-top: 10px;
+    font-family: 'Apple Chancery', cursive;
+}
+
+.book-family p {
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: 'Apple Chancery', cursive;
+}
+
+.book-group {
+    display: inline-block;
+    padding: 25px;
+    text-align: center;
+}
+
+.book-group h1 {
+    font-size: 1.2em;
+    font-weight: 200;
+    margin-top: 5px;
+    font-family: 'Apple Chancery', cursive;
+}
+
+.book-group h3 {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-top: 10px;
+    font-family: 'Apple Chancery', cursive;
+}
+
+.book-group p {
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: 'Apple Chancery', cursive;
+}
+
+.book-quote blockquote {
+    margin: 0;
+    font-size: 1.2em;
+    color: #112434;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.book-quote figcaption {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    text-align: center;
+}
+
+.book-head h1 {
+    color: #112434;
+    font-weight: bold;
+    text-align: center;
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    min-height: 70vh;
+    overflow-y: auto;
+    padding: 20px 16px;
+    /* background: #58b4e7; */
+    box-shadow: 0 5px 13px -3px rgba(0, 0, 0, 0.5);
+}
+
+.book-body {
+    width: 550px;
+}
+
+input, textarea, select {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-top: 10px;
+    resize: none;
+    color: #112434;
+    font-family: 'Apple Chancery', cursive;
+    border-radius: 10px;
+}
+
+.book-body-box {
+    padding: 20px 10px;
+    align-items: center;
+}
+
+.book-row, .book-row-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    margin-top: 5px;
+}
+
+.book-inputBox-6 {
+    width: 45%;
+}
+
+.book-inputBox-3 {
+    width: 45%;
+}
+
+@media screen and (max-width:600px)
+{
+    .book-row {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .book-inputBox-3 {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .book-inputBox-6 {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .book-container {
+        padding: 50px 16px;
+    }
+    
+}
+
+.book-inputBox-submit {
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 85px;
+}
+
+.book-inputBox-reset {
+    width: 150px;
+    margin-top: 20px;
+    margin-right: 85px;
+}
+
+/* STAFF */
+
+.staff {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 16px;
+}
+
+.staff-card {
+    position: relative;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    margin: 56px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+}
+
+.staff-card-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.5),
+    0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.staff-card-image img {
+    width: 100%;
+    transform: scale(1.2);
+}
+
+.staff-card p {
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.staff-name {
+    margin-top: 80px;
+    font-size: 1.5em;
+    color: #112434;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+}
+
+.staff-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.staff-socials button {
+    margin: 12px 8px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.4s;
+}
+
+.staff-socials button:hover {
+    opacity: 0.8;
+}
+
+.staff-socials button i {
+    color: #fff;
+    font-size: 1.4em;
+}
+
+.staff-socials button.instagram {
+    background-color: #c32aa3;
+}
+
+.staff-socials button.youtube {
+    background-color: #FF0000;
+}
+
+.staff-socials button.twitter {
+    background-color: #1DA1F2;
+}
+
+/* EVENTS */
+
+.events-info {
+    font-size: 1.2em;
+    color: #112434;
+    text-align: center;
+}
+
+.event-container {
+    font-family:'Agency FB', cursive;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.event-container h3.year {
+    font-size: 40px;
+    text-align: center;
+    color: #112434;
+    border-bottom: 1px solid #112434;
+    margin-top: 40px;
+}
+
+.event-container .event {
+    box-shadow: 0 4px 16px -8px #112434;
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+}
+
+.event .event-left {
+    background: #112434;
+    min-width: 155px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.event .event-left .date {
+    font-size: 56px;
+}
+
+.event .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.event .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+    color: #112434;
+    font-family: 'Poppins', sans-serif;
+}
+
+.event .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #112434;
+    text-transform: uppercase;
+    font-family: 'Apple Chancery', cursive;
+    font-weight: bold;
+    display: flex;
+}
+
+.event .event-right .event-timing {
+    background: #112434;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media (max-width: 550px) {
+    .event {
+        flex-direction: column;
+    }
+
+    .event .event-left {
+        padding: 0;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .event .event-left .event-date .date,
+    .event .event-left .event-date .month {
+        display: inline-block;
+        font-size: 24px;
+    }
+
+    .event .event-left .event-date {
+        padding: 10px 0;
+    }
+}
+
+/* CONTACT US */
+
+.contact-info {
+    font-size: 1.2em;
+    color: #112434;
+    text-align: center;
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #bedbe5;
+}
+
+.contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: -130px;
+}
+
+.contact-container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background: #fff1;
+    min-height: 500px;
+}
+
+.contact-container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    text-align: left;
+    cursor: pointer;
+}
+
+.contact-container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    color: #112434;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75em;
+    transition: 0.5s;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.contact-container .contactInfo .box:hover .icon {
+    background: #bedbe5;
+    color: #112434;
+}
+
+.contact-container .contactInfo .box .text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 1.1em;
+    color: #112434;
+    font-weight: 300;
+}
+
+.contact-container .contactInfo .box .text h5 {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #112434;
+}
+
+.contact-container .contactInfo .box .text p {
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.contact-container .contactInfo .txt {
+    color: #112434;
+    margin-top: 50px;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left: 50px solid #112434;
+    line-height: 1em;
+}
+
+.contact-container .contactInfo h6 {
+    font-size: 4.1em;
+    text-align: left;
+    font-family: 'Apple Chancery', cursive;
+}
+
+.sci {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+    margin-left: 5px;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    color: #1e425f;
+    font-size: 2em;
+}
+
+.sci li a:hover {
+    color: #112434;
+}
+
+.contact-container .contactForm {
+    position: relative;
+    width: 40%;
+    background: #fff1;
+    min-height: 100px;
+    padding: 60px;
+    box-shadow: 0 5px 13px -3px rgba(0, 0, 0, 0.5);
+}
+
+.contact-container .contactForm h6 {
+    font-family: 'Apple Chancery', cursive;
+    font-size: 3em;
+    color: #112434;
+    font-weight: bold;
+    text-align: left;
+}
+
+.contact-container .contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contact-container .contactForm .inputBox input,
+.contact-container .contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 0.9em;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    background: #fff1;
+    color: #000;
+    outline: none;
+    resize: none;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0;
+}
+
+.contact-container .contactForm .inputBox textarea {
+    height: 150px;
+}
+
+.contact-container .contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    margin: 10px 0;
+    color: #8f8f8f;
+    font-size: 1.1em;
+    transition: 0.5s;
+}
+
+.contact-container .contactForm .inputBox input:focus ~ span,
+.contact-container .contactForm .inputBox textarea:focus ~ span,
+.contact-container .contactForm .inputBox input:valid ~ span,
+.contact-container .contactForm .inputBox textarea:valid ~ span {
+    color: #112434;
+    font-size: 0.9em;
+    transform: translateY(-20px);
+}
+
+.contact-container .contactForm .inputBox input[type="submit"] {
+    width: 200px;
+    background: #112434;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+@media (max-width: 991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .contact-container 
+    {
+        flex-direction: column;
+    }
+    .contact-container .contactInfo,
+    .contact-container .contactForm
+    {
+        width: 100%;
+    }
+    .contact-container .contactForm
+    {
+        padding: 50px 30px;
+    }
+}
